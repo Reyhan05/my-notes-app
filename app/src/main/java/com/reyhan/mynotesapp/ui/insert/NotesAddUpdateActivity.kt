@@ -65,7 +65,7 @@ class NotesAddUpdateActivity : AppCompatActivity() {
 
         binding?.btnSubmit.setOnClickListener {
             val title = binding?.edtTitle?.text.toString().trim()
-            val description = binding?.edtDescription?.toString().trim()
+            val description = binding?.edtDescription?.text.toString().trim()
             when {
                 title.isEmpty() -> {
                     binding?.edtTitle?.error = getString(R.string.empty)
